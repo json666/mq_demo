@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            'org.springframework:spring-jms:3.1.2.RELEASE',
+            'org.springframework:spring-webmvc:3.1.2.RELEASE',
+            'org.springframework:spring-jdbc:3.1.2.RELEASE',
+            'org.springframework:spring-aop:3.1.2.RELEASE',
+            'org.apache.activemq:activeio-core:3.1.4',
+            'org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final',
+            'org.apache.xbean:xbean-spring:3.11.1',
+            'org.apache.geronimo.specs:geronimo-servlet_2.5_spec:1.2',
+            'org.apache.activemq:activemq-all:5.6.0',
+            'org.aspectj:aspectjweaver:1.7.0',
+            'cglib:cglib-nodep:2.2.2',
+            'com.google.guava:guava:12.0'
+
+    )
+    testCompile(
+            'junit:junit:4.+',
+            'org.springframework:spring-test:3.1.2.RELEASE'
+    )
+}
+
+
